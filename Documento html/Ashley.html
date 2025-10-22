@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Te quiero Ashley ❤️</title>
+  <style>
+    :root{ --bg1:#ffefef; --bg2:#ffd1dc; --accent:#ff476f }
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{
+      display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(135deg,var(--bg1),var(--bg2));
+      color:#222;
+    }
+    .card{display:flex;flex-direction:column;align-items:center;gap:20px;padding:40px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.08);backdrop-filter:blur(4px)}
+    .heart{width:160px;height:160px;transform:scale(1);animation:pulse 1s ease-in-out infinite}
+    @keyframes pulse{0%{transform:scale(0.95)}50%{transform:scale(1.08)}100%{transform:scale(0.95)}}
+    .message{font-size:28px;font-weight:700;letter-spacing:0.2px}
+    .sub{font-size:16px;color:#333a;margin-top:-6px}
+    /* small responsive */
+    @media (max-width:420px){.heart{width:120px;height:120px}.message{font-size:22px}}
+    /* make the heart red fill animate */
+    .heart path{fill:var(--accent);filter:drop-shadow(0 6px 12px rgba(255,71,111,0.18))}
+  </style>
+</head>
+<body>
+  <div class="card" role="main" aria-label="Mensaje de amor para Ashley">
+    <!-- Heart SVG -->
+    <svg class="heart" viewBox="0 0 32 29.6" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M23.6 0c-2.9 0-5.4 1.7-6.6 4.2C15.8 1.7 13.3 0 10.4 0 4.6 0 0 4.8 0 10.7c0 6.9 6.7 11.9 16 18.9 9.3-7 16-12 16-18.9C32 4.8 27.4 0 23.6 0z"/>
+    </svg>
+
+    <div class="message">te quiero Ashley</div>
+  </div>
+
+</body>
+</html>
